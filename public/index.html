@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+ <div id='login_icon' data-status='Login:' alt=""></div>
+
+<input id='url_input' name='original_url' type="url" title='URl does not match requirements' required=""  pattern="https?://.*" placeholder="input URL...">
+
+<div id='answer_container'>
+   <button id='copy'>copy url</button><a id = 'link'></a>
+</div>
+
+
+<!-- Login page -->
+<form class='login_container'>
+    <div class='radio_wrapper'>
+        <input hidden checked type="radio" name="action" id="check_login"><label for="check_login">Login</label>
+        <input  hidden  type="radio" name="action" id="check_register"><label for="check_register">Register</label>
+    </div>
+   
+    <input class='auth' type="text" placeholder="UserName" required='' minlength="4">
+    <input  class='auth' type="password" placeholder="Password" minlength="8">
+
+</form>
+
+<!-- Login page -->
+</body>
+<script src="axios/axios.js"></script>
+<script src="functions.js"></script>
+
+</html>

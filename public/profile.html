@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+ <div id='login_icon' alt=""></div>
+
+        <div class='profile_input_container show'>
+            <input type="url" name="" class="profile_input"  pattern="https?://.*"  placeholder="Original URL">  
+            <input type="text" name="" class="profile_input" placeholder="Desired URL">  
+        </div>
+ 
+        <div id='answer_container'>
+            <button id='copy'>copy url</button><a id = 'link'></a>
+         </div>
+
+<div  class='table'>
+    <div class="table_head">
+        <div class='table_cell column1'>Original Link</div>
+        <div class='table_cell column2'>Short Link</div>
+        <div class='table_cell column3'>Unique visitors</div>
+        <div class='table_cell column4'>ToTal visitors</div>
+        <div class='table_cell column5'>DEL</div>
+    </div>
+<div class="table_body">
+    
+</div>
+</div>
+
+
+<div class="controll_panel">
+    <input   hidden type="radio" checked name="switch" id="create"><label class='controlls' for="create">Create</label>
+    <input   hidden type="radio" name="switch" id="myUrls"><label  class='controlls'for="myUrls">My Urls</label>
+    <button class='controlls'  id='logout'>Log Out</button>
+</div>
+
+
+</body>
+<script src="axios/axios.js"></script>
+<script src="profileFunctions.js"></script>
+
+</html>
